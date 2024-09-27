@@ -1,20 +1,17 @@
+
+import MainSection from "./MainSection/main"
+import NavBar from "./HomeNavBar/nav_bar"
+import Button from "./Button/button"
+
 import './home.css'
 
-const  Home = () => {
+const Home= () => {
     return (
-        <div className="nav-container" >
-        <div className="app-name">
-            Find Job
+        <div className="home">
+            <NavBar/>
+            <MainSection/>
+            <Button buttonName = "Search Jobs"/>
         </div>
-        <div className="signup-login-container">
-            <div className="login">
-                Login
-            </div>
-            <div className="sign-up">
-                Sign Up
-            </div>
-        </div>
-    </div>
     )
 }
 
