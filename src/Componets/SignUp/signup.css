@@ -1,0 +1,78 @@
+.signup-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 99;
+    border-radius: 12px;
+    min-width: 150px;
+}
+
+.signup-title{
+    width: 100%;
+    text-align: start;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.input-container{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.signup-input{
+    width: auto;
+    padding: 12px;
+    margin: 14px 0;
+    width: 300px;
+    font-size: 16px;
+    font-family: poppins;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid grey;
+}
+
+.radio-selector-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radio-selector{
+    margin: 8px;
+    
+}
+
+.radio-label{
+    padding: 8px 4px;
+}
+
+.forgot-password{
+    padding: 16px 8px ;
+    font-size: 14px;
+}
+
+.signup-button{
+    background-color: #0077b6;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0 0 0 ;
+    font-family: poppins;
+}
+
