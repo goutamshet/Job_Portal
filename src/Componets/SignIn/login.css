@@ -46,7 +46,7 @@
 
 
 .forgot-password{
-    padding: 16px 8px ;
+    padding: 8px ;
     font-size: 14px;
 }
 
@@ -62,3 +62,21 @@
     font-family: poppins;
 }
 
+.account-links
+{
+    width: 100%;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    padding: 10px 0;
+}
+
+.signup-link{
+    text-decoration: underline;
+    color: inherit;
+}

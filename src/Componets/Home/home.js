@@ -1,7 +1,7 @@
 
 import MainSection from "./MainSection/main"
 import NavBar from "./HomeNavBar/nav_bar"
-import Button from "./Button/button"
+import SearchButton from "./SearchButton/search_button"
 
 import './home.css'
 
@@ -10,7 +10,7 @@ const Home= () => {
         <div className="home">
             <NavBar/>
             <MainSection/>
-            <Button buttonName = "Search Jobs"/>
+            <SearchButton />
         </div>
     )
 }

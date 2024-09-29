@@ -1,11 +1,14 @@
 
 import './signup.css'
+import {Link} from 'react-router-dom';
+
 const SignUp = () => {
     return (
         <div className="signup-container" >
             <form className="card">
                 <h1 className="signup-title">Sign Up</h1>
                 <div className="input-container">
+                    <input type="text" placeholder="Name" className="signup-input"/>
                     <input type="email" placeholder="Email" className="signup-input"/>
                     <input type="password" placeholder="Password" className="signup-input"/>
                 </div>
@@ -15,8 +18,11 @@ const SignUp = () => {
                 <input type="radio" value="Seeker" name="seeker-employer" id="seeker" className="radio-selector"/>
                 <label htmlFor="seeker" className="radio-label">Seeker</label>
                 </div>
-                <button className="signup-button">Log In</button>
-                <div className="forgot-password">Forgot password?</div>
+                <button className="signup-button">Sign Up</button>
+                <div className="account-links">
+                    <span className="text">Already have an account? &nbsp;</span> 
+                    <Link className="login-link" to="/signin">Log In</Link>
+                </div>
             </form>
         </div>
     )
