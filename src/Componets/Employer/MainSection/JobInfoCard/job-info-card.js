@@ -1,9 +1,9 @@
 import './job-info-card.css'
 import edit from '../../../../Assets/edit.png'
 import remove from '../../../../Assets/trash-can.png'
-import companylogo from '../../../../Assets/company.png'
+import companyicon from '../../../../Assets/company.png'
 import work from '../../../../Assets/work.png'
-import description from '../../../../Assets/job-description.png'
+import jobDescription from '../../../../Assets/job-description.png'
 import salary from '../../../../Assets/payroll.png'
 import jobtype from '../../../../Assets/job-type.png'
 import location from '../../../../Assets/location.png'
@@ -12,7 +12,7 @@ const JobInfoCard  = () => {
     return(
         <div className="job-info-card-container">
             {/* <div className='company-details-container'>
-                <img className="company-logo" src={companylogo}/>
+                <img className="company-icon" src={companyicon}/>
                 <div className="company-name pd">
                     Company : Om Tours and Travels
                 </div>
@@ -39,45 +39,59 @@ const JobInfoCard  = () => {
                 <div className="post-date">
                     Posted On : 30-09-2024
                 </div>
-                <div className="edit-container">
-                    <div className="icon-container">
-                        <img className="edit-icon" src={edit}/>
-                    </div>
-                    <div className="icon-container">
-                        <img className="remove-icon" src={remove}/>
-                    </div>
+                <div className="edit-icon-container">
+                    <img className="edit-icon" src={edit}/>
+                </div>
+                <div className="remove-icon-container">
+                    <img className="remove-icon" src={remove}/>
                 </div>
             </div>
-            <table>
+            <div className="company-details-container">
+                <img className="icon" src={companyicon}/>
+                <div className="company-name">Om Tours and Travels</div>
+            </div>
+            <div className="company-details-container">
+                <img className="icon" src={work}/>
+                <div className="job-title">Driver</div>
+            </div>
+            <div className="company-details-container">
+                <img className="icon" src={jobDescription}/>
+                <div className="job-description">Wanted Experienced Driver to travel long distance at any time</div>
+            </div>
+            <div className="company-details-container">
+                <img className="icon" src={salary}/>
+                <div className="job-salary">Rs. 2000 per travel</div>
+            </div>
+            <div className="company-details-container">
+            <img className="icon" src={jobtype}/>
+            <div className="job-type">Full Time</div>
+            </div>
+            <div className="company-details-container">
+            <img className="icon" src={location}/>
+            <div className="job-salary">All Karnataka</div>
+            </div>
+            <div className="company-details-container">
+            <img className="icon" src={phone}/>
+            <div className="contact-no">9876451536</div> 
+            </div>
+            {/* <table>
                 <tr>
-                    <th className="table-heading"><img className="company-logo" src={companylogo}/></th>
-                    <td className="table-data">Om Tours and Travels</td>
+                    <th className="table-heading"></th>
+                    <td className="table-data company-name"></td>
                 </tr>
                 <tr>
-                    <th className="table-heading"><img className="logo" src={work}/></th>
-                    <td className="table-data">Driver</td>
+                    <th className="table-heading"><img className="icon" src={work}/></th>
+                    <td className="table-data job-title">Driver</td>
                 </tr>
                 <tr>
-                    <th className="table-heading"><img className="logo" src={description}/></th>
-                    <td className="table-data">Wanted Experienced Driver to travel long distance at any time</td>
+                    <th className="table-heading"><img className="icon" src={description}/></th>
+                    <td className="table-data job-description">Wanted Experienced Driver to travel long distance at any time</td>
                 </tr>
                 <tr>
-                    <th className="table-heading"><img className="logo" src={salary}/></th>
-                    <td className="table-data">2000/travel</td>
+                    <th className="table-heading"><img className="icon" src={salary}/></th>
+                    <td className="table-data job-salary">2000/travel</td>
                 </tr>
-                <tr>
-                    <th className="table-heading"><img className="logo" src={jobtype}/></th>
-                    <td className="table-data">Full Time</td>
-                </tr>
-                <tr>
-                    <th className="table-heading"><img className="logo" src={location}/></th>
-                    <td className="table-data">All Karnatka</td>
-                </tr>
-                <tr>
-                    <th className=" table-heading"><img className="logo" src={phone}/></th>
-                    <td className="table-data">9748548338</td>
-                </tr>
-            </table>
+            </table> */}
         </div>
     )
 }

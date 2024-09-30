@@ -4,6 +4,11 @@ const EmployerMainSection = () => {
     return(
         <div className="main">
             <JobInfoCard/>
+            <JobInfoCard/>
+            <JobInfoCard/>
+            <JobInfoCard/>
+            <JobInfoCard/>
+            <JobInfoCard/>
         </div>
     )
 }
