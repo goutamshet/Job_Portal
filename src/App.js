@@ -5,6 +5,8 @@ import Login from './Componets/SignIn/login';
 import SignUp from './Componets/SignUp/signup';
 import {BrowserRouter as Router , Route, Routes} from 'react-router-dom'
 import Employer from './Componets/Employer/employer';
+import Seeker from './Componets/Seeker/seeker';
+import PostJob from './Componets/Employer/PostJob/post_job';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path='/signup' element={<SignUp/>}/>
           <Route path='/signin' element={<Login/>}/>
           <Route path='/employer' element={<Employer/>}/>
+          <Route path='/post-job' element={<PostJob/>}/>
+          <Route path='/seeker' element={<Seeker/>}/>
         </Routes>
     </div>
     </Router>
