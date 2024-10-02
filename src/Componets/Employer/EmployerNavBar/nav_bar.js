@@ -1,8 +1,16 @@
 import './nav_bar.css'
 import {Link} from 'react-router-dom'
-import profile from '../../../Assets/profile.png'
+import profile from '../../../Assets/account.png'
+import SubMenu from './SubMenu/sub_menu'
+import { useState } from 'react'
 
 const  NavBar = () => {
+    const[subMenuVisible,setSubMenuVisible] = useState(false);
+
+    const handleSubMenuVisibility = () => {
+        setSubMenuVisible((prev) => !prev)
+    }
+
     return (
         <div className="nav-container" >
             <div className="app-name">
@@ -18,11 +26,12 @@ const  NavBar = () => {
                 <Link to="/post-job" className="link">
                     <button className="button-post-job">Post Job</button>
                 </Link>
-                <div className="profile-container">
+                <div className="profile-container" onClick={handleSubMenuVisibility}>
                     <span className="account-type">Employer</span>
                     <img  className="profile" src={profile}/>
                 </div>
             </div>
+            <SubMenu isVisible={subMenuVisible}/>
     </div>
     )
 }

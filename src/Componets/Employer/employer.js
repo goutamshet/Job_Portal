@@ -1,4 +1,5 @@
 import NavBar from "./EmployerNavBar/nav_bar"
+import SubMenu from "./EmployerNavBar/SubMenu/sub_menu"
 import EmployerMainSection from "./MainSection/main"
 
 const Employer = () => {

@@ -1,6 +1,6 @@
 import './nav_bar.css'
 import {Link} from 'react-router-dom'
-import profile from '../../../Assets/profile.png'
+import profile from '../../../Assets/account.png'
 
 const  NavBar = () => {
     return (
